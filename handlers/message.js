@@ -11,9 +11,6 @@ bot.on("message", async message => {
     let cmd = args.shift().toLowerCase();
     let command;
 
-    // return message.channel.send(`**${user_tag}** is currently afk. Reason: ${key.reason}`);
-    // return message.reply(`you have been removed from the afk list!`).then(msg => msg.delete(5000));
-
     if (message.content.includes(message.mentions.users.first())) {
         let mentioned = bot.afk.get(message.mentions.users.first().id);
         if (mentioned) message.channel.send(`**${mentioned.usertag}** is currently afk. Reason: ${mentioned.reason}`);
@@ -25,9 +22,6 @@ bot.on("message", async message => {
 
     if (bot.commands.has(cmd)) {
 
-        console.log(`[${moment().format('DD/MM/YY - hh:mm:ss')}] user: ${message.author.tag} | cmd: ${cmd} ${args.join(" ")} | guild: ${message.guild.name}`);
-
-        bot.channels.get("593012689249501187").send(`[${moment().format('DD/MM/YY - hh:mm:ss')}] user: ${message.author.tag} | cmd: ${cmd} ${args.join(" ")} | guild: ${message.guild.name}`);
         command = bot.commands.get(cmd);
     } else {
         command = bot.commands.get(bot.aliases.get(cmd));
