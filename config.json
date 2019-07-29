@@ -1,10 +1,10 @@
 {
-  "prefix": "n/",
+  "prefix": "yourprefix",
   "logsChannel": "logs",
   "reportsChannel": "reports",
 
   "activity": {
     "streaming": false,
-    "game": "Minekwaft"
+    "game": "ne pas remplir"
   }
 }
