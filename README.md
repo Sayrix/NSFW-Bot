@@ -3,7 +3,7 @@
 **Before You Begin**
 ---
 Make sure you have installed [Node.js](https://nodejs.org) and [Git](https://git-scm.com)
----
+
 **Launch the bot**
 ---
 1. Run `npm install`
