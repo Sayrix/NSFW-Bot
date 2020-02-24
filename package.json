@@ -1,0 +1,21 @@
+{
+  "name": "nsfw-bot",
+  "version": "1.0.0",
+  "description": "Bot pour se la durcir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "porn"
+  ],
+  "author": "un génie",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "discord.js": "^11.5.1",
+    "moment": "^2.24.0",
+    "os": "^0.1.1",
+    "superagent": "^5.2.2"
+  }
+}
