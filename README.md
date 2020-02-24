@@ -7,4 +7,4 @@ Make sure you have installed [Node.js](https://nodejs.org) and [Git](https://git
 **Launch the bot**
 ---
 1. Run `npm install`
-2. Run `npm start`
+2. Run `node index.js`
