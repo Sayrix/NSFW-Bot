@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
 
     if (!message.channel.nsfw) return message.channel.send('Vous devez utiliser cette commande dans un salon nsfw !') 
 
-    var lo = new Discord.RichEmbed()
+    var lo = new Discord.MessageEmbed()
                 .setDescription(`Veuillez patienter... <a:Loading:592829210054098944>`)
                 .setTimestamp()
 
