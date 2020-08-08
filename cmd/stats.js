@@ -2,7 +2,7 @@
 exports.run = (client, message) => {
     var os = require('os');
     
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
         .setTimestamp()
         .addField(`:map: Nombre de serveurs`, `${client.guilds.size}`, true)
         .addField(`:bust_in_silhouette: Nombre d\'utilisateurs`, `${client.users.size}`, true)  
