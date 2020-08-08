@@ -13,7 +13,7 @@ module.exports.run = (client, message, args) => {
 
         superagent.get('https://nekobot.xyz/api/image').query({ type: '4k'}).end((err, response) => {
 
-            var embed_nsfw = new Discord.RichEmbed()
+            var embed_nsfw = new Discord.MessageEmbed()
                 .setDescription(`:underage:\n**[L'image ne se charge pas ? cliquez ici](${response.body.message})**`)
                 .setTimestamp()
                 .setImage(response.body.message)
