@@ -1,10 +1,9 @@
-# [NSFW Bot](https://wonderbotlist.com/fr/bot/592753795574923275)
----
-**Before You Begin**
----
-Make sure you have installed [Node.js](https://nodejs.org) and [Git](https://git-scm.com)
+# NSFW Bot
 
-**Launch the bot**
----
-1. Run `npm install`
-2. Run `node index.js`
+NSFW Bot is an open-source discord bot that has nsfw commands with the nekobot.xyz api.
+
+## Features
+
+### Bot Commands
+
+<img align="left" style="float: centrer; margin: 0 10px 0 0;" src="https://cdn.discordapp.com/attachments/583032529989271574/741729122719629433/unknown.png" height="200" width="350"/>
