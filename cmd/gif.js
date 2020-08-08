@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
 
     if (!message.channel.nsfw) return message.channel.send('Vous devez utiliser cette commande dans un salon nsfw !') 
 
-    var lo = new Discord.RichEmbed()
+    var lo = new Discord.MessageEmbed()
                 .setDescription(`Veuillez patienter... <a:Loading:592829210054098944>`)
                 .setTimestamp()
 
@@ -13,7 +13,7 @@ module.exports.run = (client, message, args) => {
 
         superagent.get('https://nekobot.xyz/api/image').query({ type: 'pgif'}).end((err, response) => {
 
-            var embed_nsfw = new Discord.RichEmbed()
+            var embed_nsfw = new Discord.MessageEmbed()
                 .setDescription(`:underage:\n**[L'image ne se charge pas ? cliquez ici](${response.body.message})**`)
                 .setTimestamp()
                 .setImage(response.body.message)
