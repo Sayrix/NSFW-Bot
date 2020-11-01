@@ -1,0 +1,14 @@
+{
+  "name": "nsfw-bot",
+  "version": "1.0.0",
+  "description": "Bot pour se la durcir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "porn"
+  ],
+  "author": "Sayrix",
+  "license": "ISC"
+}
