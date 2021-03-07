@@ -6,5 +6,6 @@ module.exports.run = (client, message, args) => {
     .setDescription(`Prefix : ${config.prefix}\nLa liste des commandes :`)
     .addField('NSFW  :underage: :', '`4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `neko`, `pussy`')
     .addField('Autre :', '`help`, `stats`')
+    .setFooter(client.footer)
     message.channel.send(help)
 }

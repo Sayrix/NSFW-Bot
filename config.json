@@ -1,4 +1,6 @@
 {
   "prefix": "yourprefix",
-  "token": "yourtoken"
+  "token": "yourtoken",
+
+  "footer": "NSFW Bot • [Open Source](https://github.com/Sayrix/NSFW-Bot)"
 }

@@ -24,6 +24,8 @@ client.on('message', function(message) {
   const cmd = client.commands.get(command);
   if (!cmd) return;
   cmd.run(client, message, args);
+
+  client.footer = config.footer
 });
 
 fs.readdir("./cmd/", (err, files) => {if (err) return console.error(err);files.forEach(file => {if (!file.endsWith(".js")) return;let props = require(`./cmd/${file}`);let commandName = file.split(".")[0];console.log(`Load command ${commandName}`);client.commands.set(commandName, props);});});

@@ -17,6 +17,7 @@ module.exports.run = (client, message, args) => {
                 .setDescription(`:underage:\n**[L'image ne se charge pas ? cliquez ici](${response.body.message})**`)
                 .setTimestamp()
                 .setImage(response.body.message)
+                .setFooter(client.footer)
             
             m.edit(embed_nsfw);
         });
