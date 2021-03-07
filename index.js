@@ -1,11 +1,8 @@
 const discord = require('discord.js'),
 config = require("./config.json"),
 fs = require('fs'),
-moment = require('moment'),
 superagent = require('superagent'),
 os = require('os');
-
-moment.locale('fr');
 
 const client = new discord.Client();
 client.commands = new discord.Collection();

@@ -1,7 +1,9 @@
 # NSFW Bot
 
-NSFW Bot is an open-source discord bot that has nsfw commands with the nekobot.xyz api.
+NSFW Bot is an open-source discord bot that has nsfw commands running with the nekobot.xyz api.
 
-### Bot Commands
+## Commands :
 
-<img align="left" style="float: centrer; margin: 0 10px 0 0;" src="https://cdn.discordapp.com/attachments/583032529989271574/741729122719629433/unknown.png"/>
+- NSFW Commands 🔞 : `4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `neko`, `pussy`
+- Other Commands 🧷 : `help`, `stats`
+
