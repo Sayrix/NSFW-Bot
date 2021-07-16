@@ -4,7 +4,7 @@ NSFW Bot is an open-source discord bot that has nsfw commands running with the n
 
 ## Commands :
 
-- NSFW Commands 🔞 : `4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `neko`, `pussy`
+- NSFW Commands 🔞 : `4k`, `anal`, `ass`, `boobs`, `hanal`, `hass`, `hboobs`, `hentai`, `hkitsune`, `hmidriff`, `hneko`, `holo`, `kemonomimi`, `neko`, `pgif`, `pussy`, `yaoi`
 - Other Commands 🧷 : `help`, `stats`
 
 ## How to install ?
