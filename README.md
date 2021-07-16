@@ -20,10 +20,16 @@ npm i
 ```json
 //config.json
 {
-  "prefix": "yourprefix",
-  "token": "yourtoken",
+  "prefix": "your prefix",
+  "token": "your token",
+  "owners": ["OWNER ID"],
+  "footer": "NSFW Bot • is.gd/nsfwbot",
 
-  "footer": "NSFW Bot • is.gd/nsfwbot"
+  "msg": {
+    "nsfwWarn": "You must use this command in an nsfw channel!",
+    "loading": "Please wait...",
+    "imageNotLoading": "Image not loading ? Click Here"
+  }
 }
 ```
 
