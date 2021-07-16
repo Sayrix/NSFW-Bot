@@ -1,24 +1,19 @@
 {
   "name": "nsfw-bot",
-  "version": "1.0.0",
-  "description": "Bot pour se la durcir",
+  "version": "2.0.0",
+  "description": "Bot pour se la durcir.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [
-    "nsfw",
-    "nsfw-bot",
-    "bot",
-    "discordbot",
-    "nsfw-bot-discord"
-  ],
-  "author": "Sayrix",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1",
-    "fs": "0.0.1-security",
-    "os": "^0.1.1",
+    "discord-buttons": "^4.0.0",
+    "discord.js": "^12.5.3",
+    "os": "^0.1.2",
     "superagent": "^6.1.0"
-  }
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "license": "MIT"
 }

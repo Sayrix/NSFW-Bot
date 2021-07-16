@@ -1,30 +1,11 @@
-const discord = require('discord.js'),
-config = require("./config.json"),
-fs = require('fs'),
-superagent = require('superagent'),
-os = require('os');
+const Discord = require("discord.js"),
+  nsfwBot = require("./handler/Client.js"),
+  client = new nsfwBot(),
+  config = require('./config.json');
 
-const client = new discord.Client();
-client.commands = new discord.Collection();
-client.queue = new Map();
-client.config = config;
-
-client.on('ready', function() {
-    console.log("Launched")
-});
-
-client.on('message', function(message) {
-  if (message.author.bot) return;
-  if (message.content.indexOf(config.prefix) !== 0) return;
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  const cmd = client.commands.get(command);
-  if (!cmd) return;
-  cmd.run(client, message, args);
-
-  client.footer = config.footer
-});
-
-fs.readdir("./cmd/", (err, files) => {if (err) return console.error(err);files.forEach(file => {if (!file.endsWith(".js")) return;let props = require(`./cmd/${file}`);let commandName = file.split(".")[0];console.log(`Load command ${commandName}`);client.commands.set(commandName, props);});});
-
-client.login(config.token)
+require("discord-buttons")(client);
+require("./handler/Module.js")(client);
+require("./handler/Event.js")(client);
+client.on("warn", console.warn); // This will warn you via logs if there was something wrong with your bot.
+client.on("error", console.error); // This will send you an error message via logs if there was something missing with your coding.
+client.login(config.token).catch(console.error); // This token will leads to the .env file. It's safe in there.
